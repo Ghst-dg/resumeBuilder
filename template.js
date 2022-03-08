@@ -1,5 +1,4 @@
-const resumeCardContent = ['Experience', 'Education', 'Skills', 'Projects', 'Contacts', 'Achievement' ,'Interests'];
-const resumeCardList = ['Hi', 'Hello', 'Bonjour', 'Namaste', 'Konichiwa', 'Ni Hao'];
+const resumeCardContent = ['Skills', 'Education', 'Experience', 'Achievements', 'Interests', 'Projects' ,'Contacts'];
 const resumeCardAppend = document.querySelector('.resumeContent');
 
 for(let i = 0; i < resumeCardContent.length; i++)
@@ -15,15 +14,7 @@ for(let i = 0; i < resumeCardContent.length; i++)
     cardHeader.appendChild(header);
 
     let cardContent = document.createElement('div');
-    cardContent.setAttribute('class', 'resumeCardContent');
-
-    for(let j = 0; j < resumeCardList.length; j++)
-    {
-        let cardList = document.createElement('p');
-        cardList.innerText = `${j + 1}. ${resumeCardList[j]}`
-
-        cardContent.appendChild(cardList);
-    }
+    cardContent.setAttribute('class', `${resumeCardContent[i]}`);
 
     card.appendChild(cardHeader);
     card.appendChild(cardContent);

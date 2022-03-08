@@ -58,4 +58,18 @@ document.querySelector('.nextBttn').addEventListener('click', ()=>{
     let resumeAbout = document.createElement('p');
     resumeAbout.innerText = document.querySelector('.inputAbout').value;
     document.querySelector('.About').appendChild(resumeAbout);
+
+    for(let i = 0; i < resumeCardContent.length; i++)
+    {
+        let parentNode = document.querySelector(`.${resumeCardContent[i]}`);
+        let parentSource = document.querySelectorAll(`.input${inputList[i]}`);
+        for(let j = 0; j < parentSource.length; j++)
+        {
+            const text = document.createElement('p');
+            const value = parentSource[j].value;
+            text.innerText = `${j + 1}. ${value}`;
+
+            parentNode.appendChild(text);
+        }
+    }
 });

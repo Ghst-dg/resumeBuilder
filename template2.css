@@ -55,11 +55,65 @@
     margin: 2px;
 }
 
-.resumeCardContent{
+.Skills{
     font-size: 10px;
     margin-top: 10px;
 }
 
-.resumeCardContent p{
+.Skills p{
+    margin: 0;
+}
+
+.Education{
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.Education p{
+    margin: 0;
+}
+
+.Experience{
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.Experience p{
+    margin: 0;
+}
+
+.Achievements{
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.Achievements p{
+    margin: 0;
+}
+
+.Interests{
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.Interests p{
+    margin: 0;
+}
+
+.Projects{
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.Projects p{
+    margin: 0;
+}
+
+.Contacts{
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.Contacts p{
     margin: 0;
 }
