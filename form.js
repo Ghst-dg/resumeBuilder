@@ -46,3 +46,16 @@ for(let i = 0; i < inputList.length; i++)
         })
     })
 }
+
+document.querySelector('.nextBttn').addEventListener('click', ()=>{
+    document.querySelector('.formViewPort').style.display = 'none';
+    document.querySelector('.preview').style.display = 'flex';
+
+    let resumeName = document.createElement('p');
+    resumeName.innerText = document.querySelector('.inputName').value;
+    document.querySelector('.Name').appendChild(resumeName);
+
+    let resumeAbout = document.createElement('p');
+    resumeAbout.innerText = document.querySelector('.inputAbout').value;
+    document.querySelector('.About').appendChild(resumeAbout);
+});

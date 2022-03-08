@@ -1,17 +1,3 @@
-*{
-    color: #4A3933;
-    font-family: 'Roboto Mono', 'Material Icons', monospace;
-}
-
-body{
-    margin: 0;
-    background-color: #E6D5B8;
-}
-
-body::-webkit-scrollbar{
-    width: 0px;
-}
-
 .formViewPort{
     width: 100vw;
     background-color: #E6D5B8;

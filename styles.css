@@ -1,11 +1,8 @@
-*{
-    color: #4A3933;
-    font-family: 'Roboto Mono', 'Material Icons', monospace;
-}
-
 body{
     background-color: #E6D5B8;
     margin: 0;
+    color: #4A3933;
+    font-family: 'Roboto Mono', 'Material Icons', monospace;
 }
 
 body::-webkit-scrollbar{
