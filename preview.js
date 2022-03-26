@@ -38,8 +38,6 @@ for(let i = 0; i < 2; i++)
     })
 }
 
-
-
 document.querySelector('.goBackBttn').addEventListener('click', ()=>{
     document.querySelector('.formViewPort').style.display = 'flex';
     document.querySelector('.preview').style.display = 'none';
@@ -50,12 +48,8 @@ document.querySelector('.goBackBttn').addEventListener('click', ()=>{
     let resumeAbout = document.querySelector('.About');
     resumeAbout.removeChild(resumeAbout.lastChild);
 
-    for(let i = 0; i < resumeCardContent.length; i++)
+    while(resumeCardAppend.firstChild)
     {
-        const parentNode = document.querySelector(`.${resumeCardContent[i]}`);
-        while(parentNode.firstChild)
-        {
-            parentNode.removeChild(parentNode.lastChild);
-        }
+        resumeCardAppend.removeChild(resumeCardAppend.lastChild);
     }
-})
+});

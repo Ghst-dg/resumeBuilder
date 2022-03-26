@@ -1,4 +1,5 @@
 .resume{
+    background: #FFFFFF;
     background-color: #FBE284;
     width: 30vw;
     height: 85vh;
@@ -26,7 +27,7 @@
 }
 
 .About{
-    width: 75%;
+    max-width: 75%;
     font-size: 10px;
 }
 
@@ -115,6 +116,6 @@
     margin-top: 10px;
 }
 
-.Profiles p{
+.Contacts p{
     margin: 0;
 }
