@@ -53,3 +53,19 @@ document.querySelector('.goBackBttn').addEventListener('click', ()=>{
         resumeCardAppend.removeChild(resumeCardAppend.lastChild);
     }
 });
+
+document.querySelector('.downloadBttn').addEventListener('click', ()=>{
+    html2canvas(document.querySelector('.resume')).then(canvas => {
+        document.body.appendChild(canvas);
+        canvas.style.display = 'none';
+        return canvas;
+    })
+    .then(canvas => {
+        const image = canvas.toDataURL('image/png');
+        const a = document.createElement('a');
+        a.setAttribute('download', 'resume.png')
+        a.setAttribute('href', image)
+        a.click()
+        canvas.remove()
+    })
+})

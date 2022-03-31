@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="template1.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Arima+Madurai&family=Baloo+2&family=Bree+Serif&family=Fredoka&family=Merriweather&family=Montserrat&family=Playfair+Display&family=Poppins&family=Raleway&family=Ramaraja&family=Roboto&family=Saira&family=Sora&family=Ubuntu+Mono&family=Vidaloka&display=swap" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="form.css">
@@ -28,6 +29,23 @@
         </header>
 <!------------------------------------------------------------------------------------------------------------------------------------->
         <div class="content">
+            <div class = "featureWindow">
+                <button class = "upBttn">&#xf1e0;</button>
+                <div class = "featureContainer">
+                    <div class="featureSlideContainer"></div>
+                    <div class ="featureDotContainer"></div>
+                </div>
+                <button class = "downBttn">&#xf1e3;</button>
+            </div>
+            <div class = "templateWindow">
+                <button class = "leftBttn">&#xf1e6;</button>
+                    <div class="templateContainer">
+                        <div class="templateSlideContainer"></div>
+                        <div class="templateDotContainer"></div>
+                    </div>
+                <button class = "rightBttn">&#xf1df;</button>
+            </div>
+            <div class = "stepsWindow"></div>
             <div class = "bttnContainer"><button class="nextHeaderBttn">Create Resume Now &#xf1df;</button></div>
         </div>
 <!------------------------------------------------------------------------------------------------------------------------------------->
@@ -37,8 +55,9 @@
     </div>
 
 <!------------------------------------------------------------------------------------------------------------------------------------->
-
     <div class="formViewPort">
+        <button class = "closeBttn"><p>X</p></button>
+        <button class = "helpBttn"><p>?</p></button>
         <div class="form">
             <fieldset class="inputContainer">
                 <legend>Name</legend>
@@ -79,5 +98,6 @@
     <script src = "form.js"></script>
     <script src = "preview.js"></script>
     <script src = "template.js"></script>
+    <script src = "html2canvas.js"></script>
 </body>
 </html>

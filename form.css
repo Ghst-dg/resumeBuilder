@@ -8,6 +8,60 @@
     flex-direction: row;
 }
 
+.closeBttn{
+    background-color: #F0A500;
+    border: 4px solid #4A3933;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 10;
+    top: 25px;
+    right: 25px;
+    color: #4A3933;
+    box-shadow: 2px 2px 4px #000000;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.closeBttn:active{
+    box-shadow: 1px 1px 2px #000000;
+}
+
+.closeBttn p{
+    margin: auto;
+    font-weight: bolder;
+}
+
+.helpBttn{
+    background-color: #F0A500;
+    border: 4px solid #4A3933;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 10;
+    top: 25px;
+    left: 25px;
+    color: #4A3933;
+    box-shadow: 2px 2px 4px #000000;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.helpBttn:active{
+    box-shadow: 1px 1px 2px #000000;
+}
+
+.helpBttn p{
+    margin: auto;
+    font-weight: bolder;
+}
+
 .form{
     width: 50vw;
     background-color: #E45826;
@@ -123,6 +177,7 @@ legend{
     border: 2px solid #4A3933;
     width: 7%;
     font-size: 24px;
+    text-align: center;
 }
 
 .appendBttn:active{

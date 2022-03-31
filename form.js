@@ -1,3 +1,5 @@
+
+
 const inputList = ["Skill", "Edu", "Exp", "Ach", "Int", "Proj", "Cont"];
 const inputTypes = ["Skills", "Education", "Experience", "Achievements", "Interests", "Projects", "Contacts"];
 const formContainer = document.querySelector('.form');
@@ -64,7 +66,7 @@ document.querySelector('.nextBttn').addEventListener('click', ()=>{
     resumeAbout.innerHTML = document.querySelector('.inputAbout').value;
     document.querySelector('.About').appendChild(resumeAbout);
 
-    for(let i = 0; i < resumeCardContent.length; i++)
+    for(let i = 0; i < inputTypes.length; i++)
     {
         //let parentNode = document.querySelector(`.${resumeCardContent[i]}`);
         let parentSource = document.querySelectorAll(`.input${inputList[i]}`);
@@ -97,3 +99,8 @@ document.querySelector('.nextBttn').addEventListener('click', ()=>{
         }
     }
 });
+
+document.querySelector('.closeBttn').addEventListener('click', ()=>{
+    formElement.style.display = 'none';
+    landingElement.style.display = 'flex';
+})

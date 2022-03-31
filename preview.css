@@ -79,6 +79,7 @@
 .downloadBttn{
     border: 4px solid #4A3933;
     background-color: #F0A500;
+    text-align: center;
     font-size: 15px;
     font-family: 'Roboto Mono', 'Material Icons', monospace;
     box-shadow: 2px 4px 4px #000000;
