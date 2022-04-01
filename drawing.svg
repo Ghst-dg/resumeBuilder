@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.20526726"
-     inkscape:cx="2282.3903"
-     inkscape:cy="474.99051"
+     inkscape:zoom="0.1866066"
+     inkscape:cx="1444.2147"
+     inkscape:cy="1840.7709"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -37,7 +37,7 @@
      inkscape:window-y="-313"
      inkscape:window-maximized="1"
      inkscape:pagecheckerboard="0"
-     inkscape:snap-global="false"
+     inkscape:snap-global="true"
      units="px" />
   <metadata
      id="metadata5">
@@ -2950,5 +2950,29 @@
        style="color:#000000;fill:none;stroke-width:1.08122;-inkscape-stroke:none"
        d="m 419.11461,853.43215 v 1.42965 233.1489 H 540.21979 V 853.43215 Z m 2.86143,2.85932 H 537.35836 V 1085.1513 H 421.97604 Z"
        id="path20900-6" />
+    <g
+       id="g11654"
+       transform="matrix(0.9261753,0,0,0.9261753,24.266526,48.21401)"
+       inkscape:export-filename="C:\Users\Fireworks\Documents\Pilot Proj\Resume\unlim.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <path
+         id="path1259"
+         style="fill:none;stroke:#4a3933;stroke-width:7.9375"
+         d="m 515.25069,839.71696 c 0.23659,13.06248 -3.60845,31.05809 -15.74597,35.89182 -25.69963,10.23481 -42.62084,-32.26999 -76.45683,-32.27 -31.21544,0 -46.79613,41.82206 -71.65976,33.1797 -12.98398,-4.51311 -19.6398,-23.09441 -18.60684,-36.80152 1.01082,-13.41327 10.28621,-29.88036 23.39946,-32.87711 24.61985,-5.62633 41.14839,35.51469 66.38309,36.51601 28.3392,1.1245 50.91098,-44.66513 77.56481,-34.97245 10.89898,3.96342 14.91202,19.73819 15.12204,31.33355 z"
+         sodipodi:nodetypes="aasaaaaaa" />
+      <rect
+         style="fill:#f0a500;fill-opacity:1;stroke:#4a3933;stroke-width:3.02828;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect5748"
+         width="133.37349"
+         height="17.571365"
+         x="361.96063"
+         y="784.77301" />
+      <path
+         id="rect8933"
+         style="fill:#ff6600;stroke:#4a3933;stroke-width:2.64583"
+         d="m 406.01608,654.41071 h 49.373 v 78.74087 l 12.22122,0.0242 -36.00185,51.40013 v 0 l -39.39712,-50.07359 13.80475,-0.33877 z"
+         sodipodi:nodetypes="ccccccccc" />
+    </g>
   </g>
 </svg>
