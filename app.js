@@ -1,14 +1,15 @@
 const contentFeatures = ['Single Page Web Application',
                         'Modular Forms',
-                        'Multiple Templates',
+                        'Unlimited Templates',
                         'Live Preview',
                         'Faster Page',
                         'Instant Resume',
                         'No Registration',
                         'Lightweight Application',
-                        'Free to Use'];
+                        'Free to Use',
+                        'Unlimited Download'];
 
-const contentImages = ['singPage', 'modForm', 'multiTemp', 'livePre', 'fastPage', 'instRes', 'noReg', 'lw', 'freeto'];
+const contentImages = ['singPage', 'modForm', 'multiTemp', 'livePre', 'fastPage', 'instRes', 'noReg', 'lw', 'freeto', 'unlim'];
 const contentElement = document.querySelector('.featureSlideContainer');
 const featDot = document.querySelector('.featureDotContainer');
 

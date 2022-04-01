@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="preview.css">
 </head>
 <body>
+    
     <div class="landing">
         <header class="header">
             <div class="headerTitle">
@@ -27,7 +28,6 @@
                 <img src = "headrPic.png" width="20%">
             </div>
         </header>
-<!------------------------------------------------------------------------------------------------------------------------------------->
         <div class="content">
             <div class = "featureWindow">
                 <button class = "upBttn">&#xf1e0;</button>
@@ -48,13 +48,11 @@
             <div class = "stepsWindow"></div>
             <div class = "bttnContainer"><button class="nextHeaderBttn">Create Resume Now &#xf1df;</button></div>
         </div>
-<!------------------------------------------------------------------------------------------------------------------------------------->
         <footer class="footer">
             <p class="footerText">//Team Anubhav</p>
         </footer>
     </div>
 
-<!------------------------------------------------------------------------------------------------------------------------------------->
     <div class="formViewPort">
         <button class = "closeBttn"><p>X</p></button>
         <button class = "helpBttn"><p>?</p></button>
@@ -63,29 +61,32 @@
                 <legend>Name</legend>
                 <input type="text" name="name" class = "inputName">
             </fieldset>
-
             <fieldset class="inputContainer">
                 <legend>About</legend>
-                <textarea type="text" name="about" class = "inputAbout" rows="4"></textarea>
+                <textarea type="text" name="about" class = "inputAbout" rows="4" maxlength="320"></textarea>
             </fieldset>
         </div>
         <div class = "bttnContainer"><button class="nextBttn">Submit & Pre-View &#xf1df;</button></div>
     </div>
-
-<!------------------------------------------------------------------------------------------------------------------------------------->
 
     <div class="preview">
         <div class = "sideMenu"></div>
         <div class = "sidePane"><p class = "ham">&#xe5d2</p></div>
         <div class = "previewMain">
             <div class="previewPort">
+                <!--  -->
                 <div class = "resume">
                     <div class = "resumeTitle">
-                        <div class = "Name"></div>
-                        <div class = "About"></div>
+                        <div class = "resumeName"></div> 
+                        <div class = "resumeAbout"></div> 
                     </div>
-                    <div class = "resumeContent"></div>
+                    <div class="resumeContent">
+                        <div class = "resumeEEP"></div>
+                        <div class = "resumeAIP"></div>
+                        <div class = "resumeProf"></div>
+                    </div>
                 </div>
+                <!--  -->
             </div>
             <div class="buttonContainerPort">
                 <button class = "goBackBttn">&#xf1e6; Go Back & Edit</button>

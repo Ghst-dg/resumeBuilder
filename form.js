@@ -1,5 +1,3 @@
-
-
 const inputList = ["Skill", "Edu", "Exp", "Ach", "Int", "Proj", "Cont"];
 const inputTypes = ["Skills", "Education", "Experience", "Achievements", "Interests", "Projects", "Contacts"];
 const formContainer = document.querySelector('.form');
@@ -21,6 +19,21 @@ for(let i = 0; i < inputList.length; i++)
     const inputFS = document.createElement('fieldset');
     inputFS.setAttribute('class', 'inputContainer');
 
+    if(inputTypes[i] === 'Education' || inputTypes[i] === 'Experience' || inputTypes[i] === 'Projects')
+    {
+        inputBox.setAttribute('maxlength', '120');
+    }
+
+    else if(inputTypes[i] === 'Skills' || inputTypes[i] === 'Interests')
+    {
+        inputBox.setAttribute('maxlength', '20');
+    }
+
+    else
+    {
+        inputBox.setAttribute('maxlength', '35');
+    }
+
     inputContainerBox.appendChild(inputBox);
     inputContainerBox.appendChild(appBttn);
 
@@ -29,25 +42,54 @@ for(let i = 0; i < inputList.length; i++)
 
     formContainer.appendChild(inputFS);
 
-    appBttn.addEventListener('click', ()=>{
-        const appInputBox = document.createElement('input');
-        appInputBox.setAttribute('class', `input${inputList[i]}`);
+    let counter = 4;
+    if(inputTypes[i] === 'Skills')
+    {
+        counter = 9;
+    }
 
-        const appInputContainerBox = document.createElement('div');
-        appInputContainerBox.setAttribute('class', 'inputList');
+    if(counter)
+    {
+        appBttn.addEventListener('click', ()=>{
+            const appInputBox = document.createElement('input');
+            appInputBox.setAttribute('class', `input${inputList[i]}`);
 
-        const removeInput = document.createElement('button');
-        removeInput.setAttribute('class', 'appendBttn');
-        removeInput.innerText = '-';
+            const appInputContainerBox = document.createElement('div');
+            appInputContainerBox.setAttribute('class', 'inputList');
 
-        appInputContainerBox.appendChild(appInputBox);
-        appInputContainerBox.appendChild(removeInput);
-        inputFS.appendChild(appInputContainerBox);
+            if(inputTypes[i] === 'Education' || inputTypes[i] === 'Experience' || inputTypes[i] === 'Projects')
+            {
+                appInputBox.setAttribute('maxlength', '120');
+            }
 
-        removeInput.addEventListener('click', ()=>{
-            appInputContainerBox.remove();
+            else if(inputTypes[i] === 'Skills' || inputTypes[i] === 'Interests')
+            {
+                appInputBox.setAttribute('maxlength', '20');
+            }
+
+            else
+            {
+                appInputBox.setAttribute('maxlength', '35');
+            }
+
+            const removeInput = document.createElement('button');
+            removeInput.setAttribute('class', 'appendBttn');
+            removeInput.innerText = '-';
+
+            if(counter)
+            {
+                appInputContainerBox.appendChild(appInputBox);
+                appInputContainerBox.appendChild(removeInput);
+                inputFS.appendChild(appInputContainerBox);
+                --counter
+            }
+
+            removeInput.addEventListener('click', ()=>{
+                appInputContainerBox.remove();
+                ++counter;
+            })
         })
-    })
+    }
 }
 
 
@@ -58,47 +100,108 @@ document.querySelector('.nextBttn').addEventListener('click', ()=>{
     document.querySelector('.formViewPort').style.display = 'none';
     document.querySelector('.preview').style.display = 'flex';
 
-    let resumeName = document.createElement('p');
+    let resumeName = document.createElement('span');
+    resumeName.setAttribute('class', 'name');
     resumeName.innerHTML = document.querySelector('.inputName').value;
-    document.querySelector('.Name').appendChild(resumeName);
+    document.querySelector('.resumeName').appendChild(resumeName);
 
-    let resumeAbout = document.createElement('p');
+    let resumeAbout = document.createElement('span');
+    resumeAbout.setAttribute('class', 'about');
     resumeAbout.innerHTML = document.querySelector('.inputAbout').value;
-    document.querySelector('.About').appendChild(resumeAbout);
+    document.querySelector('.resumeAbout').appendChild(resumeAbout);
 
-    for(let i = 0; i < inputTypes.length; i++)
+    for(let i = 0; i < inputList.length; i++)
     {
-        //let parentNode = document.querySelector(`.${resumeCardContent[i]}`);
-        let parentSource = document.querySelectorAll(`.input${inputList[i]}`);
-        if(parentSource[0].value)
+        const a = document.querySelector(`.input${inputList[i]}`).value;
+        if(inputList[i] === 'Skill' || inputList[i] === 'Ach' || inputList[i] === 'Int')
         {
-            let card = document.createElement('div');
-            card.setAttribute('class', 'resumeCard');
-
-            let cardHeader = document.createElement('div');
-            let header = document.createElement('p');
-
-            cardHeader.setAttribute('class', 'resumeCardHeader');
-            header.innerText = `${inputTypes[i]}`;
-            cardHeader.appendChild(header);
-
-            let cardContent = document.createElement('div');
-            cardContent.setAttribute('class', `${inputTypes[i]}`);
-
-            for(let j = 0; j < parentSource.length; j++)
+            if(a)
             {
-                const text = document.createElement('p');
-                const value = parentSource[j].value;
-                text.innerHTML = `${j + 1}. ${value}`;
-                cardContent.appendChild(text);
+                pumpAIP(inputList[i], inputTypes[i]);
+            }
+        }
+
+        else if(inputList[i] === 'Edu' || inputList[i] === 'Exp' || inputList[i] === 'Proj')
+        {
+            if(a)
+            {
+                pumpEEP(inputList[i], inputTypes[i]);
+            }
+        }
+
+        else if(inputList[i] === 'Cont' && a)
+        {
+            const apend = document.querySelectorAll('.inputCont');
+            for(let j = 0; j < apend.length; j++)
+            {
+                const text = document.createElement('span');
+                text.setAttribute('class', 'prof');
+                const val = apend[j].value
+                text.innerHTML = `${j + 1}. ${val}`;
+                document.querySelector('.resumeProf').appendChild(text);
             }
 
-            card.appendChild(cardHeader);
-            card.appendChild(cardContent);
-            resumeCardAppend.appendChild(card);
         }
     }
 });
+
+const pumpAIP = (cls, val) =>{
+    const card = document.createElement('div');
+    const title = document.createElement('div');
+    const content = document.createElement('div');
+    const text1 = document.createElement('span');
+
+    card.setAttribute('class', 'hList');
+    title.setAttribute('class', 'hcardHeader');
+    content.setAttribute('class', 'hcardContent');
+    text1.setAttribute('class', 'hcardTitle');
+
+    text1.innerHTML = `${val}`;
+
+    const sel = document.querySelectorAll(`.input${cls}`);
+    for(let j = 0; j < sel.length; j++)
+    {
+        const text2 = document.createElement('span');
+        text2.setAttribute('class', 'hCardList');
+        const list = sel[j].value;
+        text2.innerHTML = `${j + 1}. ${list}`;
+        content.appendChild(text2);
+    }
+
+    title.appendChild(text1);
+    card.appendChild(title);
+    card.appendChild(content);
+    document.querySelector('.resumeAIP').appendChild(card);
+}
+
+const pumpEEP = (cls, val) =>{
+    const card = document.createElement('div');
+    const title = document.createElement('div');
+    const content = document.createElement('div');
+    const text1 = document.createElement('span');
+
+    card.setAttribute('class', 'wList');
+    title.setAttribute('class', 'wcardHeader');
+    content.setAttribute('class', 'wcardContent');
+    text1.setAttribute('class', 'wcardTitle');
+
+    text1.innerHTML = `${val}`;
+
+    const sel = document.querySelectorAll(`.input${cls}`);
+    for(let j = 0; j < sel.length; j++)
+    {
+        const text2 = document.createElement('span');
+        text2.setAttribute('class', 'wCardList');
+        const list = sel[j].value;
+        text2.innerHTML = `${j + 1}. ${list}`;
+        content.appendChild(text2);
+    }
+
+    title.appendChild(text1);
+    card.appendChild(title);
+    card.appendChild(content);
+    document.querySelector('.resumeEEP').appendChild(card);
+}
 
 document.querySelector('.closeBttn').addEventListener('click', ()=>{
     formElement.style.display = 'none';

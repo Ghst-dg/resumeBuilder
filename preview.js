@@ -29,8 +29,8 @@ for(let i = 0; i < 2; i++)
     imgTemp.setAttribute('class', 'resumeImageBttn');
     imgTemp.setAttribute('src', `template${i + 1}.png`);
 
-    imgCont.appendChild(imgTemp);
-    hamMenu.appendChild(imgCont);
+    // imgCont.appendChild(imgTemp);
+    // hamMenu.appendChild(imgCont);
 
     imgCont.addEventListener('click', ()=>{
         const templateStyle = document.querySelector('link');
@@ -42,15 +42,29 @@ document.querySelector('.goBackBttn').addEventListener('click', ()=>{
     document.querySelector('.formViewPort').style.display = 'flex';
     document.querySelector('.preview').style.display = 'none';
 
-    let resumeName = document.querySelector('.Name');
+    const resumeName = document.querySelector('.resumeName');
     resumeName.removeChild(resumeName.lastChild);
 
-    let resumeAbout = document.querySelector('.About');
+    const resumeAbout = document.querySelector('.resumeAbout');
     resumeAbout.removeChild(resumeAbout.lastChild);
 
-    while(resumeCardAppend.firstChild)
+    const eep = document.querySelector('.resumeEEP');
+    const aip = document.querySelector('.resumeAIP');
+    const prof = document.querySelector('.resumeProf')
+
+    while(eep.firstChild)
     {
-        resumeCardAppend.removeChild(resumeCardAppend.lastChild);
+        eep.removeChild(eep.lastChild);
+    }
+
+    while(aip.firstChild)
+    {
+        aip.removeChild(aip.lastChild);
+    }
+
+    while(prof.firstChild)
+    {
+        prof.removeChild(prof.lastChild);
     }
 });
 
