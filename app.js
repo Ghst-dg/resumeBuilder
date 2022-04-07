@@ -219,11 +219,11 @@ function plusTemplateSlides(n){
     
     if (n === -1)
     {
-        mineTimer = setInterval(function(){plusTemplateSlides(n + 2)}, 8000);
+        mineTimer = setInterval(function(){plusTemplateSlides(n + 2)}, 2500);
     } 
     else
     {
-        mineTimer = setInterval(function(){plusTemplateSlides(n + 1)}, 8000);
+        mineTimer = setInterval(function(){plusTemplateSlides(n + 1)}, 2500);
     }
 }
 
@@ -257,19 +257,19 @@ function showTemplateSlides(n){
 
 window.addEventListener('load', ()=>{
     showTemplateSlides(templateSlideIndex);
-    mineTimer = setInterval(function() {plusTemplateSlides(1)}, 8000);
+    mineTimer = setInterval(function() {plusTemplateSlides(1)}, 5000);
 });
 
 function currentTemplateSlide(n){
     clearInterval(mineTimer);
-    mineTimer = setInterval(function(){plusTemplateSlides(n + 1)}, 8000);
+    mineTimer = setInterval(function(){plusTemplateSlides(n + 1)}, 2500);
     showTemplateSlides(templateSlideIndex = n);
 }
 
 
 const tagAppendBox = document.querySelector('.stepsWindow');
-const tagStr = ['Fill-Up the Details', 'Choose an Awesome Template', 'Get Your Cool Resume'];
-const tagPic = ['fillUp', 'selTemp', 'finalResume'];
+const tagStr = ['Fill-Up the Details', 'Choose an Awesome Template', 'Adjust Font Size' ,'Get Your Cool Resume'];
+const tagPic = ['fillUp', 'selTemp', 'adjFont' ,'finalResume'];
 
 for(let i = 0; i < tagStr.length; i++)
 {
