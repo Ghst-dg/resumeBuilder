@@ -1,5 +1,5 @@
 .resume{
-    background-color: #FFFFFF;
+    background-color: #000000;
     width: 30vw;
     height: 85vh;
     box-shadow: 2px 2px 4px #000000;
@@ -11,9 +11,6 @@
 .resumeTitle
 {
     background-color: #FFFFFF;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
     height: 20%;
     display: block;
@@ -21,13 +18,13 @@
 
 .resumeName
 {
-    background-color: #FFFFFF ;
+    background-color: #d4aa00;
     height: 30%;
 }
 
 .resumeAbout
 {
-    background-color: #FFFFFF;
+    background-color: inherit;
     height: 70%;
     display: flex;
     justify-content: space-around;
@@ -36,7 +33,7 @@
 
 .resumeContent
 {
-    background-color: #FFFFFF;
+    background-color: #333333;
     width: 100%;
     height: 80%;
     display: flex;
@@ -58,7 +55,7 @@
 
 .resumeAIP
 {
-    background-color: #FFFFFF;
+    background-color: #333333;
     width: 29%;
     height: 90%;
     display: flex;
@@ -123,7 +120,7 @@
 {
     font-size: 1.5em;
     margin: 0;
-    color: #000000;
+    color: #d4aa00;
 }
 
 .wcardContent
@@ -140,7 +137,7 @@
 
 .wcardList
 {
-    font-size: 0.5em;
+    font-size: 0.8em;
     color: #000000;
     margin-top: auto;
     margin-bottom: auto;
@@ -168,7 +165,7 @@
 {
     font-size: 1.5em;
     margin: 0;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 .hcardContent
@@ -185,8 +182,8 @@
 
 .hcardList
 {
-    font-size: 0.5em;
-    color: #000000;
+    font-size: 0.8em;
+    color: #cccccc;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 0;

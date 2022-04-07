@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-16">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="template1.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -10,9 +11,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="preview.css">
+    
 </head>
 <body>
-    
     <div class="landing">
         <header class="header">
             <div class="headerTitle">
@@ -51,7 +52,6 @@
             <p class="footerText">//Team Anubhav</p>
         </footer>
     </div>
-
     <div class="formViewPort">
         <button class = "closeBttn"><p>X</p></button>
         <button class = "helpBttn"><p>?</p></button>
@@ -67,17 +67,15 @@
         </div>
         <div class = "bttnContainer"><button class="nextBttn">Submit & Pre-View &#xf1df;</button></div>
     </div>
-
     <div class="preview">
         <div class = "sideMenu"></div>
         <div class = "sidePane"><p class = "ham">&#xe5d2</p></div>
         <div class = "previewMain">
             <div class="previewPort">
-                <!--  -->
                 <div class = "resume">
                     <div class = "resumeTitle">
-                        <div class = "resumeName"></div> 
-                        <div class = "resumeAbout"></div> 
+                        <div class = "resumeName"><span class = "name"></span></div> 
+                        <div class = "resumeAbout"><span class = "about"></span></div> 
                     </div>
                     <div class="resumeContent">
                         <div class = "resumeEEP"></div>
@@ -85,19 +83,20 @@
                         <div class = "resumeProf"></div>
                     </div>
                 </div>
-                <!--  -->
             </div>
+            <fieldset class = "fontControlBox">
+                <legend>Font Control</legend>
+            </fieldset>
             <div class="buttonContainerPort">
                 <button class = "goBackBttn">&#xf1e6; Go Back & Edit</button>
                 <button class = "downloadBttn">&#xe2c4;Download</button>
             </div>
         </div>
     </div>
-
-    <script src = "app.js"></script>
     <script src = "form.js"></script>
+    <script src = "app.js"></script>
     <script src = "preview.js"></script>
-    <script src = "template.js"></script>
     <script src = "html2canvas.js"></script>
 </body>
 </html>
+

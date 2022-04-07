@@ -1,6 +1,6 @@
 const contentFeatures = ['Single Page Web Application',
                         'Modular Forms',
-                        'Unlimited Templates',
+                        'Multiple Templates',
                         'Live Preview',
                         'Faster Page',
                         'Instant Resume',
@@ -128,19 +128,31 @@ function currentFeatureSlide(n) {
 }
 
 
-const resumeTemplates = ['atras', 'bubblegum', 'canvasDelight', 'frostPastel', 'kudratStrip', 'laNature', 'mintCandy', 'natureSafari', 
-                        'neonGlaze', 'neonStreet', 'pastel', 'prazan', 'rangeela', 'retroSheet', 'toska', 'tubelight'];
 
-const templateNames = ['Atras', 'Bubblegum', 'Canvas Delight', 'Frost Pastel', 'Kudrat Strip', 'la Nature', 'Mint Candy', 'Nature Safari', 
-                        'Neon Glaze', 'Neon Street', 'Pastel', 'Prazan', 'Rangeela', 'Retro Sheet', 'Toska', 'Tubelight'];
+const templateNames = ['Plain Sheet',
+                     'Evergreen', 
+                     'Yellow Desert', 
+                     'Green Desert', 
+                     'Blue Desert', 
+                     'Yellow Liner', 
+                     'Violet Liner', 
+                     'Aqua Liner', 
+                     'Pink Liner', 
+                     'Auto', 
+                     'Dark-G', 
+                     'Dark-R', 
+                     'Dark Sheet',
+                     'Dark-G', 
+                     'Cool Fire',
+                     'The Gray Side',
+                     'Greyed Only',
+                     'Black Rose'];
 
-const templateFont = ['Vidaloka', 'Fredoka', 'Roboto', 'Arima Madurai', 'Sora', 'Baloo 2', 'Abhaya Libre', 'Saira', 'Bree Serif', 
-                    'Raleway', 'Montserrat', 'Merriweather', 'Ubuntu Mono', 'Poppins', 'Ramaraja', 'Playfair Display'];
 
 const templateDotAppend = document.querySelector('.templateDotContainer');
 const templateAppend = document.querySelector('.templateSlideContainer');
 
-for(let i = 0; i < resumeTemplates.length; i++)
+for(let i = 0; i < templateNames.length; i++)
 {
     const card = document.createElement('div');
     const cardPic = document.createElement('div');
@@ -155,9 +167,9 @@ for(let i = 0; i < resumeTemplates.length; i++)
     cardText.setAttribute('class', 'templateCardText');
     text.setAttribute('class', 'templateText');
 
-    pic.setAttribute('src', `${resumeTemplates[i]}.png`);
+    pic.setAttribute('src', `template${[i + 1]}.png`);
     text.innerText = `${templateNames[i]}`;
-    text.style.fontFamily = `${templateFont[i]}`;
+    //text.style.fontFamily = `${templateFont[i]}`;
 
     cardPic.appendChild(pic);
     cardText.appendChild(text);

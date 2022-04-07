@@ -24,6 +24,8 @@
     display: flex;
     justify-content: space-around;
     align-content: space-around;
+    color: #4A3933;
+    font-family: 'Roboto Mono', 'Material Icons', monospace;
 }
 
 .closeBttn:active{
@@ -51,6 +53,8 @@
     display: flex;
     justify-content: space-around;
     align-content: space-around;
+    color: #4A3933;
+    font-family: 'Roboto Mono', 'Material Icons', monospace;
 }
 
 .helpBttn:active{
@@ -72,6 +76,8 @@
     flex-direction: column;
     border: 8px solid #4A3933;
     margin-top: 2%;
+    color: #4A3933;
+    font-family: 'Roboto Mono', 'Material Icons', monospace;
 }
 
 .inputContainer{

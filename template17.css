@@ -1,5 +1,5 @@
 .resume{
-    background-color: #FFFFFF;
+    background-color: #000000;
     width: 30vw;
     height: 85vh;
     box-shadow: 2px 2px 4px #000000;
@@ -11,9 +11,6 @@
 .resumeTitle
 {
     background-color: #FFFFFF;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
     height: 20%;
     display: block;
@@ -21,13 +18,16 @@
 
 .resumeName
 {
-    background-color: #FFFFFF ;
+    background-color: #666666;
     height: 30%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .resumeAbout
 {
-    background-color: #FFFFFF;
+    background-color: inherit;
     height: 70%;
     display: flex;
     justify-content: space-around;
@@ -36,7 +36,7 @@
 
 .resumeContent
 {
-    background-color: #FFFFFF;
+    background-color: #666666;
     width: 100%;
     height: 80%;
     display: flex;
@@ -58,7 +58,7 @@
 
 .resumeAIP
 {
-    background-color: #FFFFFF;
+    background-color: #666666;
     width: 29%;
     height: 90%;
     display: flex;
@@ -70,7 +70,7 @@
 
 .resumeProf
 {
-    background-color: #FFFFFF;
+    background-color: #1a1a1a;
     width: 100%;
     height: 10%;
     display: flex;
@@ -92,12 +92,13 @@
     color: #000000;
     margin-top: auto;
     margin-bottom: auto;
+    text-align: center;
 }
 
 .prof
 {
     font-size: 1em;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 /* ******************************************************************************************************************************************************************* */
@@ -136,11 +137,12 @@
     align-content: space-around;
     flex-wrap: wrap;
     background: inherit;
+    border-top: 2px solid #666666;
 }
 
 .wcardList
 {
-    font-size: 0.5em;
+    font-size: 0.8em;
     color: #000000;
     margin-top: auto;
     margin-bottom: auto;
@@ -181,12 +183,13 @@
     align-content: space-around;
     flex-wrap: wrap;
     background: inherit;
+    border-top: 2px solid #FFFFFF;
 }
 
 .hcardList
 {
-    font-size: 0.5em;
-    color: #000000;
+    font-size: 0.8em;
+    color: #cccccc;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 0;

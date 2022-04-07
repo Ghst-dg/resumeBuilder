@@ -13,6 +13,10 @@ button{
     all:unset;
 }
 
+a{
+    text-decoration: none;
+}
+
 .landing{
     width: 100%;
     margin: auto;
@@ -45,6 +49,8 @@ button{
     flex-direction: row;
     padding-left: 2.5%;
     padding-right: 2.5%;
+    color: #4A3933;
+    font-family: 'Roboto Mono', 'Material Icons', monospace;
 }
 
 .logo{
@@ -68,6 +74,8 @@ h1{
 .headerText{
     font-size: 35px;
     text-align: center;
+    color: #4A3933;
+    font-family: 'Roboto Mono', 'Material Icons', monospace;
 }
 
 .headerBttnContainer{
@@ -114,6 +122,8 @@ h1{
     align-content: space-around;
     flex-wrap: wrap;
     overflow: hidden;
+    color: #4A3933;
+    font-family: 'Roboto Mono', 'Material Icons', monospace;
 }
 
 .featureWindow{

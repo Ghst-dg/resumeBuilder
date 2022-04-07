@@ -3,37 +3,76 @@
     width: 30vw;
     height: 85vh;
     box-shadow: 2px 2px 4px #000000;
-    display: block;
     font-family: monospace;
-}
-
-.resumeTitle{
-    background-color: inherit;
-    height: 20%;
-    width: 100%;
     display: block;
-    border-bottom: 15px solid #32CD32;
+    margin: auto;
 }
 
-.resumeTitle p{
-    margin: 0;
+.resumeTitle
+{
+    background-color: #;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 20%;
+    display: block;
 }
 
-.Name{
-    color: #32CD32;
-    width: 50%;
-    font-size: 25px;
+.resumeName
+{
+    background-color: #FFFFFF ;
+    height: 30%;
 }
 
-.About{
-    width: 75%;
-    font-size: 10px;
+.resumeAbout
+{
+    background-color: #5fd35f;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
 }
 
-.resumeContent{
-    background-color: inherit;
+.resumeContent
+{
+    background-color: #5fd35f;
     width: 100%;
     height: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.resumeEEP
+{
+    background-color: #FFFFFF;
+    width: 69%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.resumeAIP
+{
+    background-color: #5fd35f;
+    width: 29%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.resumeProf
+{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 10%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -41,81 +80,426 @@
     justify-content: space-around;
 }
 
-.resumeCard{
+.name
+{
+    font-size: 3em;
+    color: #008000;
+}
+
+.about
+{
+    font-size: 1em;
+    color: #000000;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.prof
+{
+    font-size: 1em;
+    color: #008000;
+}
+
+.wcard
+{
     display: block;
-    width: 100px;
-    min-height: 200px;
+    max-width: 90%;
+    max-height: 30%;
+    margin: auto;
+    background: inherit;
 }
 
-.resumeCardHeader{
-    font-weight: 900;
-    font-size: 15px;
-    color: #32CD32;
+.wcardHeader
+{
+    width: 100%;
+    height: 10%;
+    margin-bottom: 1em;
+    background: inherit;
 }
 
-.resumeCardHeader p{
-    margin: 2px;
-}
-
-.Skills{
-    font-size: 10px;
-    margin-top: 10px;
-}
-
-.Skills p{
+.wcardTitle
+{
+    font-size: 1.5em;
     margin: 0;
+    color: #008000;
 }
 
-.Education{
-    font-size: 10px;
-    margin-top: 10px;
+.wcardContent
+{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    background: inherit;
 }
 
-.Education p{
+.wcardList
+{
+    font-size: 1em;
+    color: #000000;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0;
+}
+
+.hcard
+{
+    display: block;
+    max-width: 90%;
+    max-height: 100%;
+    margin: auto;
+    background: inherit;
+}
+
+.hcardHeader
+{
+    width: 100%;
+    height: 10%;
+    margin-bottom: 1rem;
+    background: inherit;
+}
+
+.hcardTitle
+{
+    font-size: 1.5em;
     margin: 0;
+    color: #008000;
 }
 
-.Experience{
-    font-size: 10px;
-    margin-top: 10px;
+.hcardContent
+{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    background: inherit;
 }
 
-.Experience p{
-    margin: 0;
+.hcardList
+{
+    font-size: 1em;
+    color: #000000;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0;
 }
 
-.Achievements{
-    font-size: 10px;
-    margin-top: 10px;
+@media (min-width: 1201px)
+{
+    .resume{
+        width: 30vw;
+        height: 85vh;
+    }
+
+    .name{
+    font-size: 3em;
+    }
+
+    .about{
+    font-size: 1em;
+    }
+
+    .prof{
+    font-size: 1em;
+    }
+
+    .wcardHeader{
+    margin-bottom: 0.8em;
+    }
+
+    .wcardTitle{
+    font-size: 1.5em;
+    }
+
+    .wcardList{
+    font-size: 0.7em;
+    }
+
+    .hcardHeader{
+    margin-bottom: 1em;
+    }
+
+    .hcardTitle{
+    font-size: 1.5em;
+    }
+
+    .hcardList{
+    font-size: 0.8em;
+    }
 }
 
-.Achievements p{
-    margin: 0;
+@media (min-width: 1025px) and (max-width: 1200px)
+{
+    .resume{
+        width: 45vw;
+        height: 90vh;
+    }
+
+    .name{
+    font-size: 3em;
+    }
+
+    .about{
+    font-size: 1em;
+    }
+
+    .prof{
+    font-size: 1em;
+    }
+
+    .wcardHeader{
+    margin-bottom: 0.8em;
+    }
+
+    .wcardTitle{
+    font-size: 1.5em;
+    }
+
+    .wcardList{
+    font-size: 0.8em;
+    }
+
+    .hcardHeader{
+    margin-bottom: 1em;
+    }
+
+    .hcardTitle{
+    font-size: 1.5em;
+    }
+
+    .hcardList{
+    font-size: 0.9em;
+    }
 }
 
-.Interests{
-    font-size: 10px;
-    margin-top: 10px;
+@media (min-width: 991px) and (max-width: 1024)
+{
+    .resume{
+        width: 45vw;
+        height: 90vh;
+    }
+
+    .name{
+    font-size: 3em;
+    }
+
+    .about{
+    font-size: 1em;
+    }
+
+    .prof{
+    font-size: 1em;
+    }
+
+    .wcardHeader{
+    margin-bottom: 0.8em;
+    }
+
+    .wcardTitle{
+    font-size: 1.5em;
+    }
+
+    .wcardList{
+    font-size: 0.8em;
+    }
+
+    .hcardHeader{
+    margin-bottom: 1em;
+    }
+
+    .hcardTitle{
+    font-size: 1.5em;
+    }
+
+    .hcardList{
+    font-size: 0.9em;
+    }
 }
 
-.Interests p{
-    margin: 0;
+@media (min-width: 769px) and (max-width: 992px)
+{
+    .resume{
+        width: 65vw;
+        height: 90vh;
+    }
+
+    .name{
+    font-size: 3em;
+    }
+
+    .about{
+    font-size: 1em;
+    }
+
+    .prof{
+    font-size: 1em;
+    }
+
+    .wcardHeader{
+    margin-bottom: 0.8em;
+    }
+
+    .wcardTitle{
+    font-size: 1.5em;
+    }
+
+    .wcardList{
+    font-size: 0.8em;
+    }
+
+    .hcardHeader{
+    margin-bottom: 1em;
+    }
+
+    .hcardTitle{
+    font-size: 1.5em;
+    }
+
+    .hcardList{
+    font-size: 0.9em;
+    }
 }
 
-.Projects{
-    font-size: 10px;
-    margin-top: 10px;
+@media (min-width: 601px) and (max-width: 768px)
+{
+    .resume{
+        width: 80vw;
+        height: 90vh;
+    }
+
+    .name{
+    font-size: 3em;
+    }
+
+    .about{
+    font-size: 1em;
+    }
+
+    .prof{
+    font-size: 1em;
+    }
+
+    .wcardHeader{
+    margin-bottom: 0.8em;
+    }
+
+    .wcardTitle{
+    font-size: 1.5em;
+    }
+
+    .wcardList{
+    font-size: 0.8em;
+    }
+
+    .hcardHeader{
+    margin-bottom: 1em;
+    }
+
+    .hcardTitle{
+    font-size: 1.5em;
+    }
+
+    .hcardList{
+    font-size: 0.9em;
+    }
 }
 
-.Projects p{
-    margin: 0;
+@media (min-width: 481px) and (max-width: 600px)
+{
+    .resume{
+        width: 97vw;
+        height: 90vh;
+    }
+
+    .name{
+    font-size: 3em;
+    }
+
+    .about{
+    font-size: 1em;
+    }
+
+    .prof{
+    font-size: 1em;
+    }
+
+    .wcardHeader{
+    margin-bottom: 0.8em;
+    }
+
+    .wcardTitle{
+    font-size: 1.5em;
+    }
+
+    .wcardList{
+    font-size: 0.8em;
+    }
+
+    .hcardHeader{
+    margin-bottom: 1em;
+    }
+
+    .hcardTitle{
+    font-size: 1.5em;
+    }
+
+    .hcardList{
+    font-size: 0.9em;
+    }
 }
 
-.Contacts{
-    font-size: 10px;
-    margin-top: 10px;
+@media (min-width: 320px) and (max-width: 480px)
+{
+    .resume{
+        width: 120vw;
+        height: 80vh;
+    }
+
+    .name{
+    font-size: 2em;
+    }
+
+    .about{
+    font-size: 0.7em;
+    }
+
+    .prof{
+    font-size: 0.7em;
+    }
+
+    .wcardHeader{
+    margin-bottom: 0.6em;
+    }
+
+    .wcardTitle{
+    font-size: 1em;
+    }
+
+    .wcardList{
+    font-size: 0.6em;
+    }
+
+    .hcardHeader{
+    margin-bottom: 1em;
+    }
+
+    .hcardTitle{
+    font-size: 0.8em;
+    }
+
+    .hcardList{
+    font-size: 0.7em;
+    }
 }
 
-.Contacts p{
-    margin: 0;
-}
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */

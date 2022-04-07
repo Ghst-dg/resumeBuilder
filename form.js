@@ -19,21 +19,6 @@ for(let i = 0; i < inputList.length; i++)
     const inputFS = document.createElement('fieldset');
     inputFS.setAttribute('class', 'inputContainer');
 
-    if(inputTypes[i] === 'Education' || inputTypes[i] === 'Experience' || inputTypes[i] === 'Projects')
-    {
-        inputBox.setAttribute('maxlength', '120');
-    }
-
-    else if(inputTypes[i] === 'Skills' || inputTypes[i] === 'Interests')
-    {
-        inputBox.setAttribute('maxlength', '20');
-    }
-
-    else
-    {
-        inputBox.setAttribute('maxlength', '35');
-    }
-
     inputContainerBox.appendChild(inputBox);
     inputContainerBox.appendChild(appBttn);
 
@@ -56,21 +41,6 @@ for(let i = 0; i < inputList.length; i++)
 
             const appInputContainerBox = document.createElement('div');
             appInputContainerBox.setAttribute('class', 'inputList');
-
-            if(inputTypes[i] === 'Education' || inputTypes[i] === 'Experience' || inputTypes[i] === 'Projects')
-            {
-                appInputBox.setAttribute('maxlength', '120');
-            }
-
-            else if(inputTypes[i] === 'Skills' || inputTypes[i] === 'Interests')
-            {
-                appInputBox.setAttribute('maxlength', '20');
-            }
-
-            else
-            {
-                appInputBox.setAttribute('maxlength', '35');
-            }
 
             const removeInput = document.createElement('button');
             removeInput.setAttribute('class', 'appendBttn');
@@ -100,15 +70,8 @@ document.querySelector('.nextBttn').addEventListener('click', ()=>{
     document.querySelector('.formViewPort').style.display = 'none';
     document.querySelector('.preview').style.display = 'flex';
 
-    let resumeName = document.createElement('span');
-    resumeName.setAttribute('class', 'name');
-    resumeName.innerHTML = document.querySelector('.inputName').value;
-    document.querySelector('.resumeName').appendChild(resumeName);
-
-    let resumeAbout = document.createElement('span');
-    resumeAbout.setAttribute('class', 'about');
-    resumeAbout.innerHTML = document.querySelector('.inputAbout').value;
-    document.querySelector('.resumeAbout').appendChild(resumeAbout);
+    document.querySelector('.name').innerHTML = document.querySelector('.inputName').value;
+    document.querySelector('.about').innerHTML = document.querySelector('.inputAbout').value;
 
     for(let i = 0; i < inputList.length; i++)
     {
@@ -162,7 +125,7 @@ const pumpAIP = (cls, val) =>{
     for(let j = 0; j < sel.length; j++)
     {
         const text2 = document.createElement('span');
-        text2.setAttribute('class', 'hCardList');
+        text2.setAttribute('class', 'hcardList');
         const list = sel[j].value;
         text2.innerHTML = `${j + 1}. ${list}`;
         content.appendChild(text2);
@@ -191,7 +154,7 @@ const pumpEEP = (cls, val) =>{
     for(let j = 0; j < sel.length; j++)
     {
         const text2 = document.createElement('span');
-        text2.setAttribute('class', 'wCardList');
+        text2.setAttribute('class', 'wcardList');
         const list = sel[j].value;
         text2.innerHTML = `${j + 1}. ${list}`;
         content.appendChild(text2);
